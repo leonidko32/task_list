@@ -50,6 +50,7 @@
     margin-top: 10px;
     width: 80px;
     height: 25px;
+    color: black;
 }
 
 .paint_red::placeholder{

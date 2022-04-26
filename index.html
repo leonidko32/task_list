@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="javaScript\index.js" defer></script>
+    <script src="javaScript\script.js" defer></script>
+    <script src="javaScript\testSCR.js" defer></script>
+    <link rel="stylesheet" href="css\style.css">
+    <title>Task list</title>
+</head>
+<body>
+    <div class="container">
+        <form class="addTask">
+            <input class="addTask__input" type="text" placeholder="Your task?">
+            <div class="addTask__input--clear">
+                <div class="cross"></div>
+                <div class="cross"></div>                
+            </div>
+            <button class="addTask__button">add task</button>
+            
+        </form>
+    </div>
+    <div class="tasklistWrapper">
+        <form  class="taskList__filter">
+            <label class="taskList__filter--label">
+                <input type="radio" name="filter" id="All" onchange="createTaskList()" checked>
+                All
+            </label>
+            <label class="taskList__filter--label">
+                <input type="radio" name="filter" id="Active" onchange="createTaskList()" >
+                Active
+            </label>
+            <label class="taskList__filter--label">
+                <input type="radio" name="filter" id="Finished" onchange="createTaskList()"  >
+                Finished
+            </label>
+        </form>
+
+        <div class="taskList">            
+            <div class="task">
+                <div class='task__checkbox__wrapper'>     
+                    <label class="task__checkbox--label" >           
+                        <input  type="checkbox" class="task__checkbox">
+                    </label>
+                </div>            
+                <div class="task__text">Task 1</div>
+                <div class="task__delete">delete</div>
+                <form class="changeTask__wrapper">
+                    <input type="text" class="changeTask__input">
+                </form>                  
+            </div>     
+        </div>
+    </div>
+  
+    
+    
+</body>
+</html>

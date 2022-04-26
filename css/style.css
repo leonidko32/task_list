@@ -1,0 +1,124 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    background-color:lightgray;
+    padding: 20px;
+    border-radius: 10px;
+}
+.addTask{
+    text-align: center;
+}
+
+.addTask__input{
+    height: 30px;
+    width: 200px;
+}
+.addTask__input--clear{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    transform: translateY(10.5px);
+    padding: 0;
+}
+.cross{
+    background-color: darkgray;
+    height: 2px;
+    width: 30px;
+}
+
+.addTask__input--clear:hover .cross{
+    background: black;
+}
+.addTask__input--clear:active .cross{
+    background: white;
+}
+
+
+.cross:nth-child(1){
+    transform: translateY(14px) rotate(45deg);
+}
+.cross:nth-child(2){
+    transform: translateY(12px) rotate(-45deg);
+}
+.addTask__button{
+    margin-top: 10px;
+    width: 80px;
+    height: 25px;
+}
+
+.paint_red::placeholder{
+    color:red;
+}
+.tasklistWrapper{
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    padding: 10px;
+    border-radius: 10px;
+    border: solid 2px lightgray;
+}
+
+
+.task__text{
+    background: white;
+    height: 30px;
+    width: 200px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+.task__checkbox--label{
+    display: block;
+    width: 30px;
+    height: 30px;
+}
+.task{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border-bottom: solid 2px lightgray;
+}
+.task__delete{
+    color: lightgrey;
+}
+.task__delete:hover{
+    color: red;
+    cursor: pointer;
+}
+.task__delete:active{
+    color:black;
+}
+.taskList__filter{
+    margin-bottom: 10px;
+    display: flex;
+    justify-content:space-around;
+}
+.changeTask__wrapper{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    offset: 2;
+}
+.changeTask__input{
+    width: 100%;
+    height: 32px;
+    outline: none;
+    border: solid 2px lightgray;
+}
+.changeTask__input:focus{
+    border: solid 2px black;
+}
+    

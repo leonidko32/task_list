@@ -69,28 +69,38 @@
 
 .task__text{
     background: white;
-    height: 30px;
+    min-height: 30px;
     width: 200px;
     margin-left: 10px;
     margin-right: 10px;
     display: flex;
     align-items: center;
+    flex: 1 0 auto;
 }
+
+
 .task__checkbox--label{
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 30px;
-    height: 30px;
+    height: 100%;
 }
 .task{
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content:space-between;
     background: white;
     border-bottom: solid 2px lightgray;
 }
+.task__checkbox__wrapper{
+    flex: 0 0 30px;
+}
 .task__delete{
     color: lightgrey;
+    flex: 0 0 40px;
+   
 }
 .task__delete:hover{
     color: red;
@@ -121,5 +131,33 @@
 }
 .changeTask__input:focus{
     border: solid 2px black;
+}
+@media (max-width: 450px) {
+    .container{
+        margin: 0;
+        width: 100%;
+    }
+    
+    .addTask{        
+        width: 100%;
+    }
+    .addTask__input{
+        height: 45px;
+        width: 80%;
+    }
+    .addTask__input--clear{
+        margin-left: 10px;
+    }
+    .addTask__button{
+        width: 100px;
+        height: 35px;
+    }
+    .tasklistWrapper{
+        
+        margin: 0px;
+        margin-top: 20px;
+        width: 100%;
+    }
+  
 }
     
